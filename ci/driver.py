@@ -237,7 +237,7 @@ class Driver(object):
                 environment.update(system_environment)
 
                 # ... and append commands
-                commands += system.get("commands", [])
+                commands = system.get("commands", [])
 
         return environment, commands
 
